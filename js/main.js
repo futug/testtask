@@ -1,3 +1,6 @@
+import { scrollHandler } from "./scrollHandler.js";
+scrollHandler();
+
 import { setupFormHandling } from "./formHandler.js";
 
 setupFormHandling();
@@ -13,8 +16,3 @@ pageAnimations();
 })();
 
 import { sendMail } from "./sendMail.js";
-sendMail();
-
-const sendButton = document.querySelector(".contact-form__send-button ");
-
-sendButton.addEventListener("click", sendMail);
